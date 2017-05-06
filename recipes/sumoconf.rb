@@ -30,6 +30,7 @@
 credentials = {}
 
 chef_gem 'chef-vault' do
+  version '2.9.1' # Version 3.0 and up need ruby > 2.2.0 which Opsworks does not provide for their chef client
   compile_time true if respond_to?(:compile_time)
 end
 
